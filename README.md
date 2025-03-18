@@ -106,7 +106,8 @@ p + geom_text(data = ggplot_build(p)$data[[1]], aes(x = (xmin + xmax)/2 , y =
 (ymin + ymax)/2, label = as.character(paste(round(.wt/sum(.wt),3)*100,
 '%'))))
 ```
-picture......
+![01](https://github.com/user-attachments/assets/5bf38300-d6a1-4ee6-a249-32916f07908d)
+
 Sales are coming mainly from Budget - older families, Mainstream - young singles/couples, and Mainstream - retirees
 
 ```R
@@ -121,7 +122,8 @@ p + geom_text(data = ggplot_build(p)$data[[1]], aes(x = (xmin + xmax)/2 , y =
 (ymin + ymax)/2, label = as.character(paste(round(.wt/sum(.wt),3)*100,
 '%'))))
 ```
-PICTURE
+![02](https://github.com/user-attachments/assets/dc7f25ef-6a63-4bed-864c-42ca8d0b64a0)
+
 there are more Mainstream - young singles/couples and Mainstream - retirees who buy chips. This con-
 tributes to there being more sales to these customer segments but this is not a major driver for the Budget - Older families segment.
 
@@ -139,7 +141,8 @@ labs(x = "Lifestage", y = "Avg units per transaction", title = "Units per
 customer") +↪
 theme(axis.text.x = element_text(angle = 90, vjust = 0.5))
 ```
-picture
+
+![03](https://github.com/user-attachments/assets/6de6265e-3054-4ff5-88d7-d00fa115e4af)
 
 We also find that Older families and young families in general buy more chips per customer
 
@@ -156,7 +159,8 @@ geom_bar(position = position_dodge()) +
 labs(x = "Lifestage", y = "Avg price per unit", title = "Price per unit") +
 theme(axis.text.x = element_text(angle = 90, vjust = 0.5))
 ```
-picture...........
+![04](https://github.com/user-attachments/assets/a6b54a4a-9be0-4c13-acae-60126de4e50d)
+
 
 Mainstream midage and young singles and couples are more willing to pay more per packet of chips com-
 pared to their budget and premium counterparts. This may be due to premium shoppers being more likely to
@@ -173,7 +177,8 @@ t.test(data[LIFESTAGE %in% c("YOUNG SINGLES/COUPLES", "MIDAGE SINGLES/COUPLES")
 & PREMIUM_CUSTOMER != "Mainstream", price]↪
 , alternative = "greater")
 ```
-picture.....
+![05](https://github.com/user-attachments/assets/ffb5c3c9-c53b-49e1-9cff-4d5bb5745d75)
+
 
 The t-test results in a p-value < 2.2e-16, i.e. the unit price for mainstream, young and mid-age singles and
 couples are significantly higher than that of budget or premium, young and midage singles and couples.
